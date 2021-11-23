@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/styles_aboutUs/stylesAboutUs.css" />
+    <title>Om oss | EVENTS.se</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__logo">
+        <a class="nav__logo--a" href="index.html">EVENTS.se</a>
+      </h1>
+
+      <ul class="nav__list">
+        <li class="nav__list--item">
+          <a href="index.html" class="nav__list--item__a">Hem</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="eventList.html" class="nav__list--item__a">Alla events</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="createEvent.html" class="nav__list--item__a"
+            >Skapa ett event</a
+          >
+        </li>
+        <li class="nav__list--item">
+          <a href="aboutUs.html" class="nav__list--item__a">Om oss</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <h2 class="header__text">Om oss</h2>
+    </header>
+
+    <div class="about__info">
+        <h3 class="about__info--h3">Vi som företag</h3>
+        <p class="about__info--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit magni eveniet quis mollitia quibusdam omnis aliquid incidunt commodi dolorem aliquam ad placeat blanditiis officia, explicabo, temporibus sapiente dolor. Ipsum distinctio eius ut unde ex eos tenetur minus animi adipisci?</p>
+    <br/>
+        <h3 class="about__info--h3">Teamet som gör detta möjligt</h3>
+        <p class="about__info--p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt non est voluptatum corrupti, earum illum officiis voluptatem doloremque neque laborum maiores minus veniam minima amet libero quas, excepturi perspiciatis harum modi similique a facere, aliquam eligendi.</p>
+    <br/>
+        <h3 class="about__info--h3">Vår VD</h3>
+        <p class="about__info--p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore exercitationem aliquam deleniti, minima harum, facilis fugit quo alias recusandae ducimus sit numquam! Aliquid incidunt beatae inventore tenetur velit cumque cupiditate et.</p>
+    </div>
+
+    <div class="bossman__info">
+        <img
+            class="bossman__info--img" 
+            src="https://media.istockphoto.com/photos/business-man-smiling-with-arms-crossed-picture-id154955498?b=1&k=20&m=154955498&s=170667a&w=0&h=LNjFhT35hHYQMr1YnQa6-Px8_meb6HG3qzH41TI9SgY=" 
+            alt=""
+        >
+        <div class="bossman__info--text">
+            <p>Art Vandelay, VD</p>
+            <br/>
+            Ring till <a href="tel:#">072-069-420</a> <br/>
+            Maila till <a href="mailto:bossman@gmail.com">bossman@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="team__info">
+        <h3 class="team__info--h3">Vårt team som har byggt allt tillsammans</h3>
+        <img class="team__info--img"
+            src="https://media.istockphoto.com/photos/were-all-different-but-as-a-team-we-fit-together-picture-id508878448?k=20&m=508878448&s=612x612&w=0&h=_OosUUBwFMLzfqJSEKnCAavZBHaFqfCU9i1w7Xfmc_o="
+            alt=""
+        >
+    </div>
+
+    <div class="contact">
+        <h3 class="contact__header">Kontakta oss gärna om du har frågor eller idéer!</h3>
+        <h3 class="contact__thankYou">Tack för ditt meddelande, vi återkopplar så fort vi kan!</h3>
+        <form action="#" class="contact__form">
+            <div class="contact__form--name">
+                <label for="name">
+                    Ditt namn
+                </label>
+                <input 
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="contact__form--name__input"
+                >
+            </div>
+            <div class="contact__form--email">
+                <label for="email">
+                    Din mailadress
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="contact__form--email__input"
+                >
+            </div>
+            <div class="contact__form--msg">
+                <label for="msg">Ditt meddelande</label>
+                    <textarea
+                        class="contact__form--msg__input"
+                        name="msg"
+                        id="msg"
+                        cols="50"
+                        rows="5"
+                        >
+                    </textarea>
+            </div>
+
+            <input type="submit" class="contact__form--submit">
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".contact__form").submit(function(e){
+            e.preventDefault();
+            $(this).hide("fast")
+            $(".contact__thankYou").css({"font-size": 30, "padding-bottom": 100});
+            $(".contact__thankYou").css("position", "relative", "important");
+            });
+        });
+    </script>
+  </body>  
+</html>

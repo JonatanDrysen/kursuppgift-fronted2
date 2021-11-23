@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/styles_create/stylesCreate.css" />
+    <title>Skapa ett event | EVENTS.se</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__logo">
+        <a class="nav__logo--a" href="index.html">EVENTS.se</a>
+      </h1>
+
+      <ul class="nav__list">
+        <li class="nav__list--item">
+          <a href="index.html" class="nav__list--item__a">Hem</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="eventList.html" class="nav__list--item__a">Alla events</a>
+        </li>
+        <li class="nav__list--item">
+          <a href="createEvent.html" class="nav__list--item__a"
+            >Skapa ett event</a
+          >
+        </li>
+        <li class="nav__list--item">
+          <a href="aboutUs.html" class="nav__list--item__a">Om oss</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__2">
+      <h2>Skapa ditt event</h2>
+    </div>
+
+    <form action="#" class="form">
+      <div class="form__name">
+        Namn
+        <input
+          type="text"
+          placeholder="För och efternamn"
+          class="form__name--input"
+        />
+      </div>
+
+      <div class="form__date">
+        Datum
+        <input type="date" class="form__date--input" />
+      </div>
+
+      <div class="form__desc">
+        Kort beskrivning
+        <label for="desc__text" class="form__desc--input">
+          <textarea
+            name="desc__text"
+            id="desc__text"
+            cols="50"
+            rows="5"
+            placeholder="Kort beskrivning av ditt event"
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="form__agenda">
+        Agenda
+        <label for="agenda__text" class="form__agenda--input">
+          <textarea
+            name="agenda__text"
+            id="agenda__text"
+            cols="50"
+            rows="5"
+            placeholder="Agendan för ditt event"
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="form__category">
+        Kategori
+        <label for="categories" class="form__category--input">
+          <select name="categories" id="categories">
+            <option value="concert">Konsert</option>
+            <option value="picnic">Picknick</option>
+            <option value="campaign">Kampanj</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form__img">
+        Bilder
+        <div class="form__img--input">
+          <input type="file" accept="image/png, image/jpeg" />
+          <input type="file" accept="image/png, image/jpeg" />
+          <input type="file" accept="image/png, image/jpeg" />
+          <input type="file" accept="image/png, image/jpeg" />
+        </div>
+      </div>
+      
+      <div class="form__submit">
+        <button type="submit" class="form__submit--btn">Skapa ditt event!</button>
+      </div>
+    </form>
+  </body>
+</html>
